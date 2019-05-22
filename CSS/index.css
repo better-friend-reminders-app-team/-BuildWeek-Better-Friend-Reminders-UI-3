@@ -383,3 +383,28 @@ header .header-text p {
   color: white;
   font-size: 1.2rem;
 }
+main.container .biz-logic {
+  display: flex;
+  padding: 2rem 4rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main.container .biz-logic.even {
+  flex-direction: row-reverse;
+}
+main.container .biz-logic .image {
+  flex: 1 1 300px;
+  max-width: 600px;
+}
+main.container .biz-logic .image img {
+  width: 100%;
+}
+main.container .biz-logic .text {
+  flex: 1 1 300px;
+  max-width: 600px;
+}
+main.container .biz-logic .text p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-variant: all-petite-caps;
+}
