@@ -312,6 +312,7 @@ html,
 body {
   font-family: 'Work Sans', sans-serif;
   background: #fafafa;
+  color: #3f3d56;
 }
 h1,
 h2 {
@@ -321,7 +322,6 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  color: #3f3d56;
   position: relative;
 }
 header .nav-wrapper {
@@ -340,9 +340,9 @@ header .nav-wrapper nav {
   justify-self: flex-end;
 }
 header .nav-wrapper nav a {
-  color: #3f3d56;
   font-weight: bold;
   margin-right: 20px;
+  color: #3f3d56;
   text-decoration: none;
 }
 header .nav-wrapper nav a:hover {
@@ -407,4 +407,10 @@ main.container .biz-logic .text p {
   font-size: 1.2rem;
   font-weight: bold;
   font-variant: all-petite-caps;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: antiquewhite;
 }

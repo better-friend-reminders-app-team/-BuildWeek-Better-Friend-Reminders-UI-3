@@ -2,7 +2,6 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  color: @header-color;
   position: relative;
 
   .nav-wrapper {
@@ -11,7 +10,7 @@ header {
     position: sticky;
     top: 0;
     padding: 0 5vw;
-    background: antiquewhite;
+    background: @header-bg;
     align-items: center;
 
     .logo {
@@ -20,18 +19,18 @@ header {
     nav {
       justify-self: flex-end;
       a {
-        color: #3f3d56;
         font-weight: bold;
         margin-right: 20px;
+        color: @color;
         text-decoration: none;
-        .hover(#f4735c, 1.2rem);
+        .hover(@sec-color, 1.2rem);
       }
     }
   }
   .header-img {
     height: 500px;
     width: 100%;
-    background: antiquewhite;
+    background: @header-bg;
     padding: 4rem 10vw;
     display: grid;
     justify-content: center;
@@ -57,7 +56,7 @@ header {
     }
     p {
       padding: 0.5rem 1rem;
-      background-color: #f4735c;
+      background-color: @sec-color;
       color: white;
       font-size: 1.2rem;
     }
