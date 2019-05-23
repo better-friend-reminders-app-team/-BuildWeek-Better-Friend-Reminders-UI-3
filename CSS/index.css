@@ -416,6 +416,11 @@ header .header-text {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header .header-text {
+    top: 70%;
+  }
+}
 header .header-text h1 {
   word-spacing: 2rem;
   color: #3f3d56;
