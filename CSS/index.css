@@ -341,11 +341,6 @@ header .nav-wrapper {
     justify-content: center;
   }
 }
-@media (max-width: 500px) {
-  header .nav-wrapper {
-    padding-bottom: 3rem;
-  }
-}
 header .nav-wrapper a {
   text-decoration: none;
   color: inherit;
@@ -368,7 +363,6 @@ header .nav-wrapper nav {
     justify-self: center;
     display: flex;
     flex-direction: column;
-    height: 50px;
     width: 100%;
     padding-bottom: 2rem;
   }
@@ -398,13 +392,12 @@ header .header-img {
   width: 100%;
   background: antiquewhite;
   padding: 4rem 10vw;
-  padding-top: 8rem;
   display: grid;
   justify-content: center;
 }
 @media (max-width: 500px) {
   header .header-img {
-    padding-top: 10rem;
+    margin-top: 10rem;
   }
 }
 header .header-img img {
@@ -467,6 +460,11 @@ main.container .biz-logic .text p {
   background: antiquewhite;
   padding: 4rem 10vw;
   padding-top: 8rem;
+}
+@media (max-width: 500px) {
+  .carousel {
+    margin-top: 9rem;
+  }
 }
 .carousel .left-button,
 .carousel .right-button {
