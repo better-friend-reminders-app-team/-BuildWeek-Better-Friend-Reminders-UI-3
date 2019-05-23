@@ -346,7 +346,11 @@ header .nav-wrapper {
     padding-bottom: 3rem;
   }
 }
-header .nav-wrapper .logo {
+header .nav-wrapper a {
+  text-decoration: none;
+  color: inherit;
+}
+header .nav-wrapper a .logo {
   justify-self: start;
 }
 header .nav-wrapper nav {
