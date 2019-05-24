@@ -481,6 +481,12 @@ header .header-text h1 {
   word-spacing: 2rem;
   color: #3f3d56;
 }
+@media (max-width: 500px) {
+  header .header-text h1 {
+    font-size: 1.2rem;
+    word-spacing: unset;
+  }
+}
 header .header-text p {
   padding: 0.5rem 1rem;
   background-color: #f4735c;
