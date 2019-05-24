@@ -316,7 +316,8 @@ body {
 }
 h1,
 h2 {
-  font-family: 'Princess Sofia', cursive;
+  font-family: 'Pacifico', cursive;
+  font-weight: 300;
 }
 header {
   width: 100%;

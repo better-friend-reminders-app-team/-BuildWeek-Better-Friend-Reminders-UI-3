@@ -6,15 +6,9 @@
     "github": "https://github.com/Mdmetelus"
   },
   {
-    "name": "Ikechukwu Eze",
-    "position": "WEB UI Developer",
-    "pic_url": "images/ikechukwu.jpg",
-    "github": "https://github.com/iykekings"
-  },
-  {
     "name": "John Feloe",
     "position": "WEB UI Developer",
-    "pic_url": "images/john.png",
+    "pic_url": "images/John.png",
     "github": "https://github.com/Zurglots"
   },
   {
@@ -22,6 +16,12 @@
     "position": "WEB UI Developer",
     "pic_url": "images/micahjones.png",
     "github": "https://github.com/micahjones13"
+  },
+  {
+    "name": "Ikechukwu Eze",
+    "position": "WEB UI Developer",
+    "pic_url": "images/ikechukwu.jpg",
+    "github": "https://github.com/iykekings"
   },
   {
     "name": "Triston Armstrong ",
