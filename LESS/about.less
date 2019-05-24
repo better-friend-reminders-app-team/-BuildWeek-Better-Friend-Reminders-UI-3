@@ -9,11 +9,15 @@ main.about-container {
     background: @header-bg;
     .body-con {
       a {
-        background: #65617d;
+        background: @color;
         padding: 0.4rem 3rem;
-        color: #f4735c;
+        color: @sec-color;
         text-decoration: none;
         border-radius: 3px;
+        &:hover {
+          background-color: @sec-color;
+          color: @color;
+        }
       }
     }
     .image-con {
