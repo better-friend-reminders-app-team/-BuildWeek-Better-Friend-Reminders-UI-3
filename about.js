@@ -28,3 +28,9 @@ async function renderTeam() {
 }
 
 renderTeam();
+
+// Go back from about page
+document.querySelector('.nav-wrapper .logo').addEventListener('click', e => {
+  e.preventDefault();
+  window.history.back();
+});
