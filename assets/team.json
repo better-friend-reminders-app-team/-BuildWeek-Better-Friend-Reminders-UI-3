@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Max David Meletus",
+    "position": "Team Lead",
+    "pic_url": "images/meletus.jpg",
+    "github": "https://github.com/Mdmetelus"
+  },
+  {
+    "name": "Ikechukwu Eze",
+    "position": "WEB UI Developer",
+    "pic_url": "images/ikechukwu.jpg",
+    "github": "https://github.com/iykekings"
+  },
+  {
+    "name": "John Feloe",
+    "position": "WEB UI Developer",
+    "pic_url": "images/john.png",
+    "github": "https://github.com/Zurglots"
+  },
+  {
+    "name": "Micah Jones",
+    "position": "WEB UI Developer",
+    "pic_url": "images/micahjones.png",
+    "github": "https://github.com/micahjones13"
+  },
+  {
+    "name": "Triston Armstrong ",
+    "position": "Front End Developer",
+    "pic_url": "images/armstrong.jpg",
+    "github": "https://github.com/Tarmstrong95"
+  },
+  {
+    "name": "Tom Exarhakis",
+    "position": "Front End Developer",
+    "pic_url": "images/tomexar.png",
+    "github": "https://github.com/Tomexar"
+  }
+]
