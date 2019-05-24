@@ -456,6 +456,46 @@ main.container .biz-logic .text p {
   font-weight: bold;
   font-variant: all-petite-caps;
 }
+main.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 3rem;
+  padding: 4rem 10vw;
+}
+main.about-container article {
+  padding: 1.5rem;
+  text-align: center;
+  background: antiquewhite;
+}
+main.about-container article .body-con a {
+  background: #65617d;
+  padding: 0.4rem 3rem;
+  color: #f4735c;
+  text-decoration: none;
+  border-radius: 3px;
+}
+main.about-container article .image-con {
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+main.about-container article .image-con:after {
+  content: '';
+  background: #f4735c;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  top: 90%;
+  z-index: 10;
+  position: absolute;
+  clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+main.about-container article .image-con img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  filter: grayscale(0.7);
+}
 .carousel {
   display: flex;
   place-items: center;
