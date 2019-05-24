@@ -344,6 +344,7 @@ header .nav-wrapper {
 }
 header .nav-wrapper a {
   text-decoration: none;
+  text-align: center;
   color: inherit;
 }
 header .nav-wrapper a .logo {
