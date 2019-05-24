@@ -7,23 +7,53 @@ header {
   .nav-wrapper {
     display: grid;
     grid-auto-flow: column;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
+    z-index: 999;
     padding: 0 5vw;
     background: @header-bg;
     align-items: center;
-
-    .logo {
-      justify-self: start;
+    @media @tablet {
+      grid-auto-flow: row;
+      justify-content: center;
+    }
+    a {
+      text-decoration: none;
+      text-align: center;
+      color: inherit;
+      .logo {
+        justify-self: start;
+      }
     }
     nav {
       justify-self: flex-end;
+      display: flex;
+      @media @tablet {
+        justify-self: center;
+        text-align: center;
+      }
+      @media @phone {
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 2rem;
+      }
       a {
         font-weight: bold;
         margin-right: 20px;
+        display: block;
         color: @color;
         text-decoration: none;
         .hover(@sec-color, 1.2rem);
+        @media @phone {
+          margin-right: unset;
+          display: block;
+          background: #c3b7b1;
+          margin-bottom: 0.4rem;
+          padding: 0.5rem 0;
+        }
       }
     }
   }
@@ -34,6 +64,9 @@ header {
     padding: 4rem 10vw;
     display: grid;
     justify-content: center;
+    @media @phone {
+      margin-top: 10rem;
+    }
     img {
       width: 100%;
       object-fit: fill;
@@ -50,9 +83,12 @@ header {
     text-align: center;
     flex-direction: column;
     align-items: center;
+    @media @phone {
+      top: 70%;
+    }
     h1 {
       word-spacing: 2rem;
-      color: #009688;
+      color: @color;
     }
     p {
       padding: 0.5rem 1rem;
