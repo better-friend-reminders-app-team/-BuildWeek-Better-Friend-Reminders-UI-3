@@ -18,12 +18,26 @@ header {
       grid-auto-flow: row;
       justify-content: center;
     }
+    @media @tablet {
+      grid-auto-flow: row;
+    }
     a {
       text-decoration: none;
       text-align: center;
       color: inherit;
       .logo {
         justify-self: start;
+      }
+    }
+    a {
+      text-decoration: none;
+      text-align: start;
+      color: inherit;
+      .logo {
+        justify-self: start;
+      }
+      @media @phone {
+        margin-right: 3rem;
       }
     }
     nav {
@@ -35,10 +49,13 @@ header {
       }
       @media @phone {
         justify-self: center;
-        display: flex;
         flex-direction: column;
         width: 100%;
         padding-bottom: 2rem;
+        display: none;
+        &.active {
+          display: flex;
+        }
       }
       a {
         font-weight: bold;
@@ -52,9 +69,42 @@ header {
           display: block;
           background: #c3b7b1;
           margin-bottom: 0.4rem;
+          text-align: center;
           padding: 0.5rem 0;
         }
       }
+    }
+  }
+  .nav-toggle {
+    z-index: 1001;
+    position: fixed;
+    top: 6%;
+    right: 4%;
+    width: 50px;
+    display: none;
+    .bar {
+      height: 4px;
+      width: 30px;
+      background: black;
+      margin-bottom: 5px;
+    }
+    &.active {
+      .bar {
+        position: absolute;
+        top: 50%;
+        &:nth-child(1) {
+          transform: rotate(-45deg);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          transform: rotate(45deg);
+        }
+      }
+    }
+    @media @phone {
+      display: block;
     }
   }
   .header-img {
@@ -65,7 +115,7 @@ header {
     display: grid;
     justify-content: center;
     @media @phone {
-      margin-top: 10rem;
+      margin-top: 4rem;
     }
     img {
       width: 100%;
